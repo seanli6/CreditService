@@ -37,12 +37,13 @@
   ![image](https://user-images.githubusercontent.com/70720442/204917685-a2e60fb4-0157-414b-9a3a-278c44f7c1a6.png)
 
 
-  c. Goto the Body tab. Input "file" under the Key, select the "File" as the type
-  
-      click the Select Files and select the sample.csv comes with source code
+  c. Goto the Body tab. Input "file" under the Key, select the "File" as the type. Click the Select Files and select the sample.csv comes with source code
   
   ![image](https://user-images.githubusercontent.com/70720442/204917851-1e8af210-fdf7-419a-b8fb-cb8e25e8c1f8.png)
 
   ![image](https://user-images.githubusercontent.com/70720442/204918261-1a50c6dc-3299-4eeb-b0ce-b62dfcf20e0b.png)
 
+  d. Click Send and check the result:
   
+  ![image](https://user-images.githubusercontent.com/70720442/204918693-b1ac8a56-5c00-48ee-9b08-a83ec8402c80.png)
+
