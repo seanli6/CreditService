@@ -10,7 +10,7 @@
 
 ## How To
 1. Build application using
-   `mvn clean install Dmaven.test.skip=true`
+   `mvn clean install -Dmaven.test.skip=true`
    
 2. Run docker-compose
    `docker-compose -up`
@@ -52,9 +52,11 @@
 
    a. In your browser, open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password)
    
+   
    b. go to credit-controller and click /credits/search
    
    ![image](https://user-images.githubusercontent.com/70720442/204919363-840d1a9c-f518-48bb-b30e-055efa61dfd0.png)
+   
    
    c. click "Try it out"
    
@@ -62,6 +64,7 @@
 
    
    d. Input search critiras
+   
       homeOwnership [Rent, Home Mortgage, Own Home]
       maxCreditScore
       minCreditScore
