@@ -60,6 +60,23 @@
    
    ![image](https://user-images.githubusercontent.com/70720442/204919578-1c76ecc4-9d8f-4da1-b9fe-7e80f050a9c5.png)
 
+   
+   d. Input search critiras
+      homeOwnership [Rent, Home Mortgage, Own Home]
+      maxCreditScore
+      minCreditScore
+      page
+      size
+      term[Long Term, Short Term]
+           
 
+   c. Click "Execute" and chech the search result:
+   
+   ![image](https://user-images.githubusercontent.com/70720442/204920188-c608aaab-bd62-4901-90fa-7ae6861d3976.png)
+
+
+   ![image](https://user-images.githubusercontent.com/70720442/204920233-f2a2d906-3d1b-40b7-98c6-17b2e15b8d08.png)
+
+   
 
 
