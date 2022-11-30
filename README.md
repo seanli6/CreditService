@@ -32,3 +32,17 @@
 
 ![image](https://user-images.githubusercontent.com/70720442/204915760-01456697-dd14-4bf2-878b-99c009f33da0.png)
 
+  b. Go to the Authorization tab, select Basic Auth. Input Username: rbcfolks Password: password
+  
+  ![image](https://user-images.githubusercontent.com/70720442/204917685-a2e60fb4-0157-414b-9a3a-278c44f7c1a6.png)
+
+
+  c. Goto the Body tab. Input "file" under the Key, select the "File" as the type
+  
+      click the Select Files and select the sample.csv comes with source code
+  
+  ![image](https://user-images.githubusercontent.com/70720442/204917851-1e8af210-fdf7-419a-b8fb-cb8e25e8c1f8.png)
+
+  ![image](https://user-images.githubusercontent.com/70720442/204918261-1a50c6dc-3299-4eeb-b0ce-b62dfcf20e0b.png)
+
+  
