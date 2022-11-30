@@ -74,7 +74,7 @@
       term[Long Term, Short Term]
            
 
-   **c. Click "Execute" and chech the search result:**
+   **c. Click "Execute" and check the search result:**
    
    ![image](https://user-images.githubusercontent.com/70720442/204920188-c608aaab-bd62-4901-90fa-7ae6861d3976.png)
 
