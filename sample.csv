@@ -1,0 +1,19 @@
+Loan ID,Customer ID,Current Loan Amount,Term,Credit Score,Annual Income,Years in current job,Home Ownership,Purpose,Monthly Debt,Years of Credit History,Months since last delinquent,Number of Open Accounts,Number of Credit Problems,Current Credit Balance,Maximum Open Credit,Bankruptcies,Tax Liens
+f738779f-c726-40dc-92cf-689d73af533d,ded0b3c3-6bf4-4091-8726-47039f2c1b90,611314,Short Term,747,2074116,10+ years,Home Mortgage,Debt Consolidation,42000.83,21.8,NA,9,0,621908,1058970,0,0
+6dcc0947-164d-476c-a1de-3ae7283dde0a,1630e6e3-34e3-461a-8fda-09297d3140c8,266662,Short Term,734,1919190,10+ years,Home Mortgage,Debt Consolidation,36624.4,19.4,NA,11,0,679573,904442,0,0
+f7744d01-894b-49c3-8777-fc6431a2cff1,2c60938b-ad2b-4702-804d-eeca43949c52,153494,Short Term,709,871112,2 years,Rent,Debt Consolidation,8391.73,12.5,10,10,0,38532,388036,0,0
+83721ffb-b99a-4a0f-aea5-ef472a138b41,12116614-2f3c-4d16-ad34-d92883718806,176242,Short Term,727,780083,10+ years,Rent,Debt Consolidation,16771.87,16.5,27,16,1,156940,531322,1,0
+08f3789f-5714-4b10-929d-e1527ab5e5a3,39888105-fd5f-4023-860a-30a3e6f5ccb7,321992,Short Term,744,1761148,10+ years,Home Mortgage,Debt Consolidation,39478.77,26,44,14,0,359765,468072,0,0
+a4957169-d809-44cc-847b-975400bc8d11,6878d414-6a22-4712-ae43-9b3f798e463a,202928,Short Term,741,760380,1 year,Rent,Debt Consolidation,6526.69,13.8,NA,6,0,258647,476872,0,0
+43467302-94fe-494b-b52f-3fd891fea71c,48113a98-a4a0-4956-b57d-f0ce344826fb,621786,Long Term,733,1783606,10+ years,Home Mortgage,Debt Consolidation,36563.98,15.3,NA,42,0,281599,1449162,0,0
+930c7cb3-6086-434a-9547-3ed41c181552,19941661-98e2-4800-93c9-a0e92057c813,266794,Long Term,,,< 1 year,Own Home,Debt Consolidation,12336.89,5.8,NA,9,0,233206,342232,0,0
+0b2f1b66-741e-4e37-a929-99926cdc9e9a,6a1adeda-079b-49e5-ac7c-91828f2806a0,202466,Short Term,736,1068617,5 years,Rent,Debt Consolidation,18745.21,20.5,NA,2,0,0,0,0,0
+d08f3a5e-93df-40e7-bdd8-cba59180bddf,4080a828-a61a-4f04-a627-397f4319500c,266288,Long Term,683,2031518,2 years,Rent,Debt Consolidation,12443.1,24.4,56,8,2,31445,251130,2,0
+3102b699-a2d2-4df4-9c33-005dc41e3525,8116b23d-aad4-436f-9666-e99b28c21b05,121110,Short Term,,,< 1 year,Rent,Debt Consolidation,10749.44,19.2,52,4,0,102087,198330,0,0
+663ad9a3-4691-4f8c-90c6-75a5f4f0b34f,8ec9f388-a275-40ee-9edc-82dec9f978c3,258104,Short Term,723,1284514,7 years,Rent,Debt Consolidation,6368.99,14.6,64,12,0,128402,266904,0,0
+1e277d73-10b5-475f-8538-2a5a09d62c8d,db6fb330-9742-4738-a35f-810f9573684c,161722,Short Term,680,504374,7 years,Rent,other,6094.63,9.5,NA,13,0,167903,388828,0,0
+79d992b7-0aa7-4059-a10b-3d416809d77e,3baae7fe-d27a-40af-9289-2b4626c0893f,753016,Long Term,,,5 years,Home Mortgage,Debt Consolidation,9627.49,21.7,21,9,0,384522,657646,0,0
+c3c63911-be01-410b-a20a-85cb9bb83712,622add56-97b2-4067-88c7-55eafff12017,444664,Short Term,,,5 years,Rent,Debt Consolidation,22817.86,17.9,8,25,0,318953,971872,0,0
+a913063f-af67-4a8d-b663-e83b9085180d,4f8389cd-2ac7-40f6-a2bc-5c545838953f,172282,Short Term,696,669560,3 years,Home Mortgage,Debt Consolidation,17966.78,18.2,NA,16,0,431490,999262,0,0
+e326b52a-66a2-4155-925a-91dcefa97c8a,8c49e3f3-bf36-434d-a518-145c825d9455,275440,Short Term,729,1236976,6 years,Rent,Debt Consolidation,21647.08,35.8,NA,13,0,151088,264242,0,0
+add946a5-20a5-4211-bf22-408525123b1d,163b8125-8f24-4b8f-ba59-23ea017f5b48,218834,Short Term,742,1077262,3 years,Own Home,Home Improvements,19390.64,24.5,29,37,0,212800,502876,0,0

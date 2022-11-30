@@ -1,0 +1,12 @@
+version: "2.6"
+services:
+  mymongodb:
+    image: mongo:4.0-xenial
+    container_name: "mymongodb"
+    ports:
+      - 27017:27017
+  creditservice-app:
+    build: .
+    container_name: creditservice-app
+    ports:
+      - 8080:8080
