@@ -19,7 +19,7 @@
 3. Wait till the READY of `Credit-service` container
     
     
-4. Open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password)
+4. Open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password) on your browser
 
 
 ## How to Use
@@ -37,7 +37,7 @@
   ![image](https://user-images.githubusercontent.com/70720442/204917685-a2e60fb4-0157-414b-9a3a-278c44f7c1a6.png)
 
 
-  c. Goto the Body tab. Input "file" under the Key, select the "File" as the type. Click the Select Files and select the sample.csv that comes along with the source code
+  c. Go to the Body tab. Input "file" under the Key, select the "File" as the type. Click the Select Files and select the sample.csv that comes along with the source code
   
   ![image](https://user-images.githubusercontent.com/70720442/204917851-1e8af210-fdf7-419a-b8fb-cb8e25e8c1f8.png)
 
@@ -53,7 +53,7 @@
    a. In your browser, open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password)
    
    
-   b. go to credit-controller and click /credits/search
+   b. Click credit-controller and click /credits/search
    
    ![image](https://user-images.githubusercontent.com/70720442/204919363-840d1a9c-f518-48bb-b30e-055efa61dfd0.png)
    
@@ -63,7 +63,7 @@
    ![image](https://user-images.githubusercontent.com/70720442/204919578-1c76ecc4-9d8f-4da1-b9fe-7e80f050a9c5.png)
 
    
-   d. Input search critiras
+   d. Input search criterias
    
       homeOwnership [Rent, Home Mortgage, Own Home]
       maxCreditScore
