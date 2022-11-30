@@ -28,7 +28,7 @@
 
 ### 2. How to use loadAndParseCsv
 
-  a. Go to postname or soapui. Create a POST request with URL:
+  a. Go to postname or soapui. Create a POST request with URL:localhost:8080/credits
 
 ![image](https://user-images.githubusercontent.com/70720442/204915760-01456697-dd14-4bf2-878b-99c009f33da0.png)
 
