@@ -4,7 +4,7 @@ MAINTAINER Sean Li
 COPY pom.xml /build/
 COPY src /build/src/
 WORKDIR /build/
-RUN mvn package
+RUN mvn package -Dmaven.test.skip=true
 
 # Build image
 FROM adoptopenjdk/openjdk11:alpine-jre
