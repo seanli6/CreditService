@@ -19,16 +19,17 @@
 3. Wait till the READY of `Credit-service` container
     
     
-4. Open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password) on your browser
+4. Open http://localhost:8080/swagger-ui/ (Password: password Username: rbcfolks) on your browser
 
 
 ## How to Use
 
-### 1. Check the interface design document from http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password)
+### 1. Check the interface design document from http://localhost:8080/swagger-ui/ 
+   (Password: password Username: rbcfolks)
 
 ### 2. How to use loadAndParseCsv
 
-  a. Go to postname or soapui. Create a POST request with URL:localhost:8080/credits
+  a. Go to postname or soapui. Create a POST request with URL:  localhost:8080/credits
 
 ![image](https://user-images.githubusercontent.com/70720442/204915760-01456697-dd14-4bf2-878b-99c009f33da0.png)
 
