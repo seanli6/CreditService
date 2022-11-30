@@ -8,18 +8,15 @@
 1. Maven
 2. Docker & Docker-Compose
 
-## How To
-1. Build application using
-   `mvn clean install -Dmaven.test.skip=true`
-   
-2. Run docker-compose
+## How To Run
+1. Run docker-compose
    `docker-compose -up`
 
 
-3. Wait till the READY of `Credit-service` container
+2. Wait till the READY of `Credit-service` container
     
     
-4. Open http://localhost:8080/swagger-ui/ (Password: password Username: rbcfolks) on your browser
+3. Open http://localhost:8080/swagger-ui/ (Password: password Username: rbcfolks) on your browser
 
 
 ## How to Use
@@ -40,7 +37,8 @@
 
   c. Go to the Body tab. Input "file" under the Key, select the "File" as the type. Click the Select Files and select the sample.csv that comes along with the source code
   
-  ![image](https://user-images.githubusercontent.com/70720442/204917851-1e8af210-fdf7-419a-b8fb-cb8e25e8c1f8.png)
+  ![image](https://user-images.githubusercontent.com/70720442/204931328-63cea712-6e85-489b-86f1-153557e9d2c6.png)
+
 
   ![image](https://user-images.githubusercontent.com/70720442/204918261-1a50c6dc-3299-4eeb-b0ce-b62dfcf20e0b.png)
 
