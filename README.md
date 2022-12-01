@@ -99,3 +99,15 @@
    
 
 
+## How to Test
+
+### 1. This application contains Unit, Controller and Integration test. In order to run them locally, you need to change the monogodb host in application.properties from "mongodb" to "localhost"
+         
+         spring.data.mongodb.host=localhost
+         
+### 2. Run 
+         
+         mvn clean test
+         
+
+         
