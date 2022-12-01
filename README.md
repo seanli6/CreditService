@@ -54,17 +54,13 @@
    **a. In your browser, open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password)**
    
    
-   **b. Click credit-controller and click /credits/search**
+   **b. Click credit-controller and click /credits/search. And click "Try it out"**
    
-   ![image](https://user-images.githubusercontent.com/70720442/204919363-840d1a9c-f518-48bb-b30e-055efa61dfd0.png)
-   
-   
-   **c. click "Try it out"**
-   
-   ![image](https://user-images.githubusercontent.com/70720442/204919578-1c76ecc4-9d8f-4da1-b9fe-7e80f050a9c5.png)
+   ![image](https://user-images.githubusercontent.com/70720442/204934390-e3d9a977-d103-48b7-b1f4-f98c7f2ef081.png)
 
    
-   **d. Input search criterias**
+
+   **c. Input search criterias**
    
       homeOwnership [Rent, Home Mortgage, Own Home]
       maxCreditScore
@@ -74,12 +70,31 @@
       term[Long Term, Short Term]
            
 
-   **c. Click "Execute" and check the search result:**
+   **d. Click "Execute" and check the result:**
    
    ![image](https://user-images.githubusercontent.com/70720442/204920188-c608aaab-bd62-4901-90fa-7ae6861d3976.png)
 
 
    ![image](https://user-images.githubusercontent.com/70720442/204920233-f2a2d906-3d1b-40b7-98c6-17b2e15b8d08.png)
+
+
+### 4. How to use getCredit by loan Id
+
+   **a. In your browser, open http://localhost:8080/swagger-ui/ (Username: rbcfolks Password: password)**
+   
+   
+   **b. Click credit-controller and click /credits/{id}. and click "Try it out"**
+   
+![image](https://user-images.githubusercontent.com/70720442/204934691-5822bc5d-f289-4153-a2eb-2faa7c2481b7.png)
+
+   
+   **c. Input the id value e.g. d08f3a5e-93df-40e7-bdd8-cba59180bddf and click Execute and check the result"**
+   
+   ![image](https://user-images.githubusercontent.com/70720442/204935100-21beea94-ba37-49a2-bd46-853a065ab1dc.png)
+
+
+![image](https://user-images.githubusercontent.com/70720442/204935149-740e5c29-2943-465b-8b22-45094af3d72e.png)
+
 
    
 
