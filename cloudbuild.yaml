@@ -1,0 +1,23 @@
+steps:
+    
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'Build Application Image'
+    dir:
+    args:
+    - 'build'
+    - '.'
+    - '-t'
+    - 'gcr.io/${_DEVOPS_PROJECT}/${_NAMESPACE}/${_APP}:latest'
+    - '-t'
+    - 'gcr.io/${_DEVOPS_PROJECT}/${_NAMESPACE}/${_APP}:$SHORT_SHA'
+    
+images:
+- 'gcr.io/${_DEVOPS_PROJECT}/${_NAMESPACE}/${_APP}:latest'
+- 'gcr.io/${_DEVOPS_PROJECT}/${_NAMESPACE}/${_APP}:$SHORT_SHA'
+
+
+substitutions:
+  _APP: customer-review-service
+  _NAMESPACE: sean-namespace-us
+  _DEVOPS_PROJECT: 'sean-codelab'
+
