@@ -17,7 +17,7 @@ images:
 
 
 substitutions:
-  _APP: customer-review-service
+  _APP: credit-service
   _NAMESPACE: sean-namespace-us
   _DEVOPS_PROJECT: 'sean-codelab'
 
