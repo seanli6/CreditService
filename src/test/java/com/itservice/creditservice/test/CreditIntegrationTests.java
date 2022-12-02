@@ -99,7 +99,7 @@ class CreditIntegrationTests {
 		.expectHeader().contentType(MediaType.APPLICATION_JSON)
 		.expectBody()
 		.jsonPath("$.content").isNotEmpty()
-		.jsonPath("$.totalElements").isEqualTo("7");
+		.jsonPath("$.numberOfElements").isEqualTo("5");
     	
 //		.consumeWith(System.out::println);
     }

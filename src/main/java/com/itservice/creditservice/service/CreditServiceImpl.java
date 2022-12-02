@@ -67,19 +67,15 @@ public class CreditServiceImpl implements CreditService {
 			// Create CSVParser
 			CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader());
 			
-			// Mark the start time
-			Instant start = Instant.now();
-
 			// Loop the records
-			csvParser.forEach(c -> {
-				Credit credit = processCsvRecord(c);
-				creditRepository.save(credit);
-				creditList.add(credit);
-			});
+			csvParser.forEach(c -> creditList.add(processCsvRecord(c)));
 
 			// Close CSVParser
 			csvParser.close();
 			
+			// Mark the start time
+			Instant start = Instant.now();
+			creditRepository.saveAll(creditList);
 			// Mark the end time
 			Instant end = Instant.now();
 			
@@ -87,12 +83,6 @@ public class CreditServiceImpl implements CreditService {
 			Duration timeElapsed = Duration.between(start, end);
 			log.info("Time taken: for save():" + timeElapsed.toMillis() + " milliseconds");
 			log.info("Finish parsing and saving data");
-
-//			Instant start2 = Instant.now();
-//			creditRepository.saveAll(creditList);
-//			Instant end2 = Instant.now();
-//			Duration timeElapsed2 = Duration.between(start2, end2);
-//			log.info("*** Time taken: for saveAll():" + timeElapsed2.toMillis() + " milliseconds");
 		} catch (IOException e) {
 			log.error("Got IOException when loading csv file.");
 			throw new CreditServiceException("Got IOException when loading csv file.");
@@ -102,7 +92,7 @@ public class CreditServiceImpl implements CreditService {
 
 	private Credit processCsvRecord(CSVRecord c) {
 
-		log.info("calling processCsvRecord of CreditServiceImpl");
+		//log.info("calling processCsvRecord of CreditServiceImpl");
 
 		// Validate CSVRecord
 		CreditValidator.validateCreditInfo(c);
