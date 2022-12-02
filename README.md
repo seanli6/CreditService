@@ -104,8 +104,13 @@
 ### 1. This application contains Unit, Controller and Integration test. In order to run them locally, you need to change the monogodb host in application.properties from "mongodb" to "localhost"
          
          spring.data.mongodb.host=localhost
+
+### 2. Run command below to start mongodb on your docker
          
-### 2. Run 
+         docker run -d --name mymongodb -p 27017:27017 mongo
+
+
+### 3. Run 
          
          mvn clean test
          
