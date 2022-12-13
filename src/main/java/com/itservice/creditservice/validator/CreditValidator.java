@@ -2,8 +2,8 @@ package com.itservice.creditservice.validator;
 
 import org.apache.commons.csv.CSVRecord;
 
-import com.itservice.creditservice.Exception.CreditValidationException;
 import com.itservice.creditservice.constant.HeaderName;
+import com.itservice.creditservice.exception.CreditValidationException;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +13,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 @Slf4j
 public class CreditValidator {
 
-	public static void validateCreditInfo(CSVRecord csvRrd) {
+	public static void validateCreditInfo(CSVRecord csvRrd) throws CreditValidationException {
 
 		//log.info("Calling validateCreditInfo of CreditValidator");
 

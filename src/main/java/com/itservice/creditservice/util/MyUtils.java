@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.lang3.StringUtils;
@@ -67,6 +68,15 @@ public class MyUtils {
 				.yearsOfCredit(MyUtils.numStrToDoub(c.get(HeaderName.YRSOFCRET.getDesp())))
 				.currentCreditBal(MyUtils.numStrToDoub(c.get(HeaderName.CURCRETBAL.getDesp())))
 				.maxOpenCredit(MyUtils.numStrToDoub(c.get(HeaderName.MAXOPENCRET.getDesp()))).build();
+	}
+	
+	public static void sleep(int second) {
+    	try {
+			TimeUnit.SECONDS.sleep(second);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

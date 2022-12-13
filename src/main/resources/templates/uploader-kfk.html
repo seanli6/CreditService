@@ -1,0 +1,75 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>File Uploader</title>
+</head>
+
+<body>
+<input id = "fileupload" type="file" name="fileupload" />
+<button id="upload-button" onclick="uploadFile()">Upload</button>
+
+<div id="errormsg" style="color:red"></div>
+<div id="update"></div>
+
+<script>
+	window.addEventListener('load', function(e){
+		var update = document.getElementById('update');
+		var es = new EventSource('http://localhost:8080/credits/processing-kfk');
+		es.addEventListener('message', function(msg){
+			update.innerHTML ='<h2>' + msg.data + '</h2>';
+		});
+		
+	})
+	
+	
+
+</script>
+
+<script>
+async function uploadFile(){
+	
+	document.getElementById("errormsg").innerHTML='';
+	
+	let formData = new FormData();
+	formData.append("file", fileupload.files[0]);
+	let response = await fetch('/credits/upload-kfk',{
+		method: "POST",
+		body: formData
+	})
+	.then(function (response) {
+		  const contentType = response.headers.get("content-type");
+		  if (contentType && contentType.indexOf("application/json") !== -1) {
+    			return response.json();
+		  }else{
+				//if(response.status == 200){
+				//	alert("Uploading is done! Click OK to save data to database");
+				//} 
+		  }
+    })
+    .then(function (data) {
+    	//alert(JSON.stringify(data))
+    	appendData(data);
+    })
+    .catch(function (err) {
+    	//alert("error: "+err);
+    	console.log('error: ' + err);
+    });
+	
+function appendData(data) {
+	//alert("1");
+    //var mainContainer = document.getElementById("myData");
+    var mydiv = document.getElementById("errormsg").innerHTML='<h2>' + data.message + '</h2>';
+   // alert("2");
+    //div.innerHTML = 'Name: ' + data.loanId + ' ' + data.customerId;
+    //mainContainer.appendChild(div);
+}
+
+}
+
+
+
+
+</script>
+
+</body>
+
+</html>

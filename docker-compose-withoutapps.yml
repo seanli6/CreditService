@@ -48,11 +48,3 @@ services:
       echo -e 'Successfully created the following topics:'
       kafka-topics --bootstrap-server mykafka:29092 --list
       "
-      
-  creditservice-app:
-    build: .
-    container_name: creditservice-app
-    ports:
-      - 8080:8080      
-    depends_on:
-      - init-kafka      

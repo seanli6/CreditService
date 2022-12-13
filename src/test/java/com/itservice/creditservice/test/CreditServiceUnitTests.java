@@ -6,8 +6,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.itservice.creditservice.Exception.CreditServiceException;
 import com.itservice.creditservice.collection.Credit;
+import com.itservice.creditservice.exception.CreditServiceException;
 import com.itservice.creditservice.repository.CreditRepository;
 import com.itservice.creditservice.service.CreditService;
 import com.itservice.creditservice.service.CreditServiceImpl;
