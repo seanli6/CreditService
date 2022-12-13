@@ -1,0 +1,78 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "mymongodb"
+spec:
+  selector:
+    matchLabels:
+      app: "mymongodb"
+  replicas: 1
+  strategy:
+    type: "RollingUpdate"
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: "mymongodb"
+    spec:
+      containers:
+        -
+          name: "mymongodb"
+          image: "mongo"
+          imagePullPolicy: "Always"
+          ports:
+            -
+              containerPort: 27017
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name:  mymongodb
+spec:
+  selector:
+    app:  mymongodb
+  type: ClusterIP
+  
+  
+  
+---
+kind: Deployment
+metadata:
+  name: credit-service
+  labels:
+    app: credit-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app : credit-service
+  template:
+    metadata:
+      labels:
+        app: credit-service
+    spec:
+      containers:
+      - name: credit-service
+        image: gcr.io/sean-codelab/sean-namespace-us/credit-service:latest
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name:  credit-service
+spec:
+  selector:
+    app:  credit-service
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port:  8080
+    targetPort:  8080  
