@@ -13,7 +13,7 @@
 <script>
 	window.addEventListener('load', function(e){
 		var update = document.getElementById('update');
-		var es = new EventSource('http://localhost:8080/credits/processing-kfk');
+		var es = new EventSource('/credits/processing-kfk');
 		es.addEventListener('message', function(msg){
 			update.innerHTML ='<h2>' + msg.data + '</h2>';
 		});
